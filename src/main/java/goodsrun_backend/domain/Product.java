@@ -38,4 +38,11 @@ public Product(String name, int price, int stockQuantity) {
     this.price = price;
     this.stockQuantity = stockQuantity;
 }
+public static Product createProduct(String name, int price, int stockQuantity) {
+    Product product = new Product();
+    product.name = name;
+    product.price = price;
+    product.stockQuantity = stockQuantity;
+    return product;
+}
 }

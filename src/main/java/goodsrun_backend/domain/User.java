@@ -18,4 +18,11 @@ public class User extends BaseTimeEntity {
 
     @Column(nullable = false, length = 20)
     private String nickname;
+
+    public static User createUser(String email, String nickname) {
+    User user = new User();
+    user.email = email;
+    user.nickname = nickname;
+    return user;
+}
 }
